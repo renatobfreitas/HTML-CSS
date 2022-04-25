@@ -7,13 +7,26 @@
     <title>Teste de imagem de fundo</title>
     <style>
         body {
+            height: 99vh;
+            /* 
+            Esse seria o código normal:border:
+            
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 99vh;
+            background-attachment: fixed;
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            /* Usei o shothand para o background seguindo essa ordem:
+                color > image > position > repeat > size > attachment
+                Funciona exatamente igual
+            */
+            
         }
+    
         main {
             background-color: white;
             width: 400px;
@@ -27,6 +40,9 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, beatae nisi? Itaque tenetur, maiores unde dolorem doloribus beatae molestias assumenda vero illum fugiat porro sequi fugit corrupti optio! Ad, maxime?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores blanditiis sapiente labore unde ullam sit aliquid placeat quas quo similique repudiandae, excepturi repellat suscipit modi ad delectus cum dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non, incidunt eligendi dolor, cum error vero id nisi, suscipit nihil culpa modi? Dicta laudantium laboriosam libero. Eligendi adipisci vel facilis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, beatae nisi? Itaque tenetur, maiores unde dolorem doloribus beatae molestias assumenda vero illum fugiat porro sequi fugit corrupti optio! Ad, maxime?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores blanditiis sapiente labore unde ullam sit aliquid placeat quas quo similique repudiandae, excepturi repellat suscipit modi ad delectus cum dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non, incidunt eligendi dolor, cum error vero id nisi, suscipit nihil culpa modi? Dicta laudantium laboriosam libero. Eligendi adipisci vel facilis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, beatae nisi? Itaque tenetur, maiores unde dolorem doloribus beatae molestias assumenda vero illum fugiat porro sequi fugit corrupti optio! Ad, maxime?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores blanditiis sapiente labore unde ullam sit aliquid placeat quas quo similique repudiandae, excepturi repellat suscipit modi ad delectus cum dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non, incidunt eligendi dolor, cum error vero id nisi, suscipit nihil culpa modi? Dicta laudantium laboriosam libero. Eligendi adipisci vel facilis.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, beatae nisi? Itaque tenetur, maiores unde dolorem doloribus beatae molestias assumenda vero illum fugiat porro sequi fugit corrupti optio! Ad, maxime?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores blanditiis sapiente labore unde ullam sit aliquid placeat quas quo similique repudiandae, excepturi repellat suscipit modi ad delectus cum dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non, incidunt eligendi dolor, cum error vero id nisi, suscipit nihil culpa modi? Dicta laudantium laboriosam libero. Eligendi adipisci vel facilis.</p>
     </main>
 </body>
