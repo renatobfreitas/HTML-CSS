@@ -12,17 +12,41 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
+        }
+        caption {
+            padding: 10px;
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            color: white;
+            font-size: 1.5em;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead, tfoot {
-            background-color: grey;
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838;
             color: white;
+        }
+        tfoot {
+            background-color: #383838  ;
+            color: white;
+        }
+    }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
        .num {
            text-align: right;
+       }
+       p {
+           text-align: justify;
+           text-indent: 50px;
        }
     </style>
 </head>
@@ -30,6 +54,8 @@
     <h1>Uso de tabelas</h1>
     <!--ANATOMIA PARA TABELAS
     TABLE
+        Caption
+
         THEAD
             TR, TD, TH
         TBODY
@@ -38,10 +64,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>POPULAÇÃO DO ESTADOS</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -153,10 +180,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habistantes</th>
+                <th scope="row">Total de Habistantes</th>
                 <th class="num"><strong>210.147.125</strong></th>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur maxime ipsa. Eum ab vitae, unde amet modi labore temporibus similique explicabo dolorum id molestiae ea placeat qui et fuga.lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, voluptatem non dignissimos harum libero, ducimus similique, nemo veniam quidem tempora delectus rerum magnam excepturi voluptas! Ipsa ducimus cum mollitia quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo accusamus nam nisi odit harum hic, nemo fugit reprehenderit dolorem ipsam quibusdam non atque sint sapiente culpa, labore vitae aliquid. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores adipisci, eaque corporis repudiandae est odio aspernatur similique sint, autem deserunt porro. Laudantium suscipit sequi a maxime necessitatibus dicta quas?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur maxime ipsa. Eum ab vitae, unde amet modi labore temporibus similique explicabo dolorum id molestiae ea placeat qui et fuga.lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, voluptatem non dignissimos harum libero, ducimus similique, nemo veniam quidem tempora delectus rerum magnam excepturi voluptas! Ipsa ducimus cum mollitia quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo accusamus nam nisi odit harum hic, nemo fugit reprehenderit dolorem ipsam quibusdam non atque sint sapiente culpa, labore vitae aliquid. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores adipisci, eaque corporis repudiandae est odio aspernatur similique sint, autem deserunt porro. Laudantium suscipit sequi a maxime necessitatibus dicta quas?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur maxime ipsa. Eum ab vitae, unde amet modi labore temporibus similique explicabo dolorum id molestiae ea placeat qui et fuga.lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, voluptatem non dignissimos harum libero, ducimus similique, nemo veniam quidem tempora delectus rerum magnam excepturi voluptas! Ipsa ducimus cum mollitia quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo accusamus nam nisi odit harum hic, nemo fugit reprehenderit dolorem ipsam quibusdam non atque sint sapiente culpa, labore vitae aliquid. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores adipisci, eaque corporis repudiandae est odio aspernatur similique sint, autem deserunt porro. Laudantium suscipit sequi a maxime necessitatibus dicta quas?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur maxime ipsa. Eum ab vitae, unde amet modi labore temporibus similique explicabo dolorum id molestiae ea placeat qui et fuga.lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, voluptatem non dignissimos harum libero, ducimus similique, nemo veniam quidem tempora delectus rerum magnam excepturi voluptas! Ipsa ducimus cum mollitia quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo accusamus nam nisi odit harum hic, nemo fugit reprehenderit dolorem ipsam quibusdam non atque sint sapiente culpa, labore vitae aliquid. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores adipisci, eaque corporis repudiandae est odio aspernatur similique sint, autem deserunt porro. Laudantium suscipit sequi a maxime necessitatibus dicta quas?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur maxime ipsa. Eum ab vitae, unde amet modi labore temporibus similique explicabo dolorum id molestiae ea placeat qui et fuga.lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, voluptatem non dignissimos harum libero, ducimus similique, nemo veniam quidem tempora delectus rerum magnam excepturi voluptas! Ipsa ducimus cum mollitia quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo accusamus nam nisi odit harum hic, nemo fugit reprehenderit dolorem ipsam quibusdam non atque sint sapiente culpa, labore vitae aliquid. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores adipisci, eaque corporis repudiandae est odio aspernatur similique sint, autem deserunt porro. Laudantium suscipit sequi a maxime necessitatibus dicta quas?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tenetur maxime ipsa. Eum ab vitae, unde amet modi labore temporibus similique explicabo dolorum id molestiae ea placeat qui et fuga.lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, voluptatem non dignissimos harum libero, ducimus similique, nemo veniam quidem tempora delectus rerum magnam excepturi voluptas! Ipsa ducimus cum mollitia quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo accusamus nam nisi odit harum hic, nemo fugit reprehenderit dolorem ipsam quibusdam non atque sint sapiente culpa, labore vitae aliquid. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores adipisci, eaque corporis repudiandae est odio aspernatur similique sint, autem deserunt porro. Laudantium suscipit sequi a maxime necessitatibus dicta quas?</p>
 </body>
 </html>
